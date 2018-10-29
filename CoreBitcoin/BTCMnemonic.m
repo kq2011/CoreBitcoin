@@ -116,7 +116,7 @@ static inline NSUInteger BTCMnemonicIntegerFrom11Bits(uint8_t* buf, int bitIndex
 
         offset += sizeof(BTCMnemonicWordListType);
 
-        if (_wordListType != BTCMnemonicWordListTypeEnglish) {
+        if (_wordListType == BTCMnemonicWordListTypeUnknown) {
             // Not supported list.
             return nil;
         }
