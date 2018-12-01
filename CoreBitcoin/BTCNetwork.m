@@ -96,7 +96,7 @@
 
 
 - (id) copyWithZone:(NSZone *)zone {
-    BTCNetwork* network = [[BTCNetwork alloc] copy];
+    BTCNetwork* network = [[BTCNetwork alloc] init];
     
     network->_isTestnet      = _isTestnet;
     network.name             = self.name;
