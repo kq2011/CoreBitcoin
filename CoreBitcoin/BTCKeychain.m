@@ -577,7 +577,7 @@
     keychain.index = self.index;
     keychain.depth = self.depth;
     keychain.hardened = self.hardened;
-    
+    keychain.network = [self.network copy];
     return keychain;
 }
 
