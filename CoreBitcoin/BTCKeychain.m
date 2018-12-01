@@ -339,7 +339,7 @@
     derivedKeychain.parentFingerprint = self.fingerprint;
     derivedKeychain.index = index;
     derivedKeychain.hardened = hardened;
-    
+    derivedKeychain.network = [self.network copy];
     return derivedKeychain;
 }
 
