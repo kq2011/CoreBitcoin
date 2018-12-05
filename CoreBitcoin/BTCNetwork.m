@@ -99,6 +99,7 @@
     BTCNetwork* network = [[BTCNetwork alloc] init];
     
     network->_isTestnet      = _isTestnet;
+    network->_isMainnet      = _isMainnet;
     network.name             = self.name;
     network.genesisBlockHash = self.genesisBlockHash;
     network.defaultPort      = self.defaultPort;
